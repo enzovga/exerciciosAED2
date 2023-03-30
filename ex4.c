@@ -44,7 +44,6 @@ void selectOp()
 void main()
 {
     printf("Bem vindo ao banco USCS. Selecione a operação que deseja realizar.\n");
-    double saldo = 0;
     selectOp();
 }
 
