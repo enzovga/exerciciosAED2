@@ -25,6 +25,10 @@ void selectOp()
         case 2:
             printf("Digite o valor que deseja sacar: ");
             scanf("%lf", &temp);
+            if (saldo < temp) {
+                printf("Saldo insuficiente.");
+                selectOp();
+                }
             saldo -= temp;
             printf("Voce sacou %.2lfR$. O seu saldo agora : %.2lfR$", temp, saldo);
             selectOp();
